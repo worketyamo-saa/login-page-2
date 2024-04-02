@@ -14,3 +14,16 @@
     --bg-color: rgba(255, 255, 255, 1);
     --deco: rgba(255, 242, 242, 1);
 }
+
+/* initialisation css */
+
+html {
+    font-size: 10px;
+}
+
+body {
+ width: 100vw;
+ height: 100vh;
+ box-sizing: border-box;   
+ overflow-x: hidden;
+}
