@@ -1,0 +1,16 @@
+/* Suppression des valeurs par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Creation des variables */
+:root {
+    --primary-color: rgba(114, 134, 211, 1);
+    --secondary-color: rgba(142, 167, 233, 1);
+    --text-color: rgba(25, 25, 44, 1);
+    --ternary-color: rgba(229, 224, 255, 1);
+    --bg-color: rgba(255, 255, 255, 1);
+    --deco: rgba(255, 242, 242, 1);
+}
