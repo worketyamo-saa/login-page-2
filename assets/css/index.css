@@ -31,6 +31,7 @@ body {
     height: 100vh;
     box-sizing: border-box;
     overflow-x: hidden;
+    color: var(--text-color);
 }
 
 .container {
@@ -60,7 +61,7 @@ body {
     font-size: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .input_group {
@@ -119,6 +120,19 @@ span {
     justify-content: space-between;
 }
 
-.container__form_items>a {
+.container__form_items>a
+ {
     align-self: flex-end;
+}
+
+hr {
+  width: 40%;
+  border: .1rem solid var(--ternary-color);
+}
+
+.container__form_with {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
 }
