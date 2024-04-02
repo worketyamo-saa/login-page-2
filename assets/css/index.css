@@ -1,3 +1,6 @@
+/* Importation de la font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Suppression des valeurs par défaut */
 * {
     margin: 0;
@@ -13,17 +16,94 @@
     --ternary-color: rgba(229, 224, 255, 1);
     --bg-color: rgba(255, 255, 255, 1);
     --deco: rgba(255, 242, 242, 1);
+    --font: "Poppins", sans-serif;
 }
 
 /* initialisation css */
 
 html {
     font-size: 10px;
+    font-family: var(--font);
 }
 
 body {
- width: 100vw;
- height: 100vh;
- box-sizing: border-box;   
- overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.container__image {
+  flex: 1;
+  background: url(../img/background.svg) center no-repeat;
+  background-size: contain;
+}
+
+.container__form {
+    flex: 1;
+    background-color: var(--secondary-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container__form_title>h1 {
+    font-size: 3rem ;
+}
+
+.container__form_items {
+    width: 100%;
+    background-color: var(--primary-color);
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.input_group {
+    width: 100%;
+    display: flex;
+    background-color: var(--bg-color);
+    height: 5rem;
+
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_group>input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: 2rem;
+}
+
+button {
+    width: 45%;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--deco);
+    background-color: var(--primary-color);
+}
+
+.container__form_icons>div>img {
+    width: 100%;
+}
+.container__form_icons>div {
+    background-color: var(--deco);
+    border-radius: 50%;
+    padding: 2rem;
+
+}
+
+.container__form_icons {
+    display: flex;
 }
