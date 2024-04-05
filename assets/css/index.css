@@ -32,6 +32,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     color: var(--text-color);
+    background-color: red;
 }
 
 .container {
@@ -120,14 +121,13 @@ span {
     justify-content: space-between;
 }
 
-.container__form_items>a
- {
+.container__form_items>a {
     align-self: flex-end;
 }
 
 hr {
-  width: 40%;
-  border: .1rem solid var(--ternary-color);
+    width: 40%;
+    border: .1rem solid var(--ternary-color);
 }
 
 .container__form_with {
@@ -135,4 +135,22 @@ hr {
     align-items: center;
     justify-content: space-around;
     margin: 1rem;
+}
+
+/* tout les ecrans de largeur inf. à 600px */
+
+/* 
+
+320px — 480px: Mobile 
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+
+*/
+
+@media screen and (max-width: 600px ) {
+  .container__image {
+    display: none;
+  }
 }
